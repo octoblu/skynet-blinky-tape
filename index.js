@@ -1,4 +1,4 @@
-var spawn = require('child_process').spawn;
+var exec = require('child_process').exec;
 
 function Plugin(messenger, options){
   this.messenger = messenger;
@@ -19,7 +19,8 @@ var messageSchema = {
 };
 
 Plugin.prototype.onMessage = function(message, fn){
-  spawn('/Users/roy/.rbenv/shims/blinky-tape-test-tool fc9');
+  console.log('/Users/roy/.rbenv/shims/blinky-tape-test-tool ' + message.payload);
+  exec('/Users/roy/.rbenv/shims/blinky-tape-test-tool ' + message.payload);
 };
 
 Plugin.prototype.destroy = function(){

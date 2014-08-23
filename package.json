@@ -1,8 +1,11 @@
 {
   "name": "skynet-blinky-tape",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Skynet Blinky Tape Integration",
   "main": "index.js",
+  "keywords": [
+    "skynet-plugin"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
